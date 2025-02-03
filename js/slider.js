@@ -1,6 +1,5 @@
 const sliderWrapper = document.querySelector('.slider-wrapper');
 
-// Массив слайдов
 const slides = [
     { src: '/images/1.gif', alt: 'Image 1' },
     { src: '/images/2.gif', alt: 'Image 2' },
@@ -12,9 +11,8 @@ const slideWidth = 280;
 let slideIndex = slides.length;
 let autoSlideInterval;
 
-// Функция создания слайдов
 const createSlides = () => {
-    const duplicatedSlides = [...slides, ...slides, ...slides,  ...slides,  ...slides]; // Троекратное дублирование
+    const duplicatedSlides = [...slides, ...slides, ...slides,  ...slides,  ...slides];
 
     duplicatedSlides.forEach(slide => {
         const slideElement = document.createElement('div');
@@ -28,11 +26,9 @@ const createSlides = () => {
         sliderWrapper.appendChild(slideElement);
     });
 
-    // Начальная позиция (на втором блоке слайдов)
     sliderWrapper.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
 };
 
-// Функция перемещения
 const moveSlider = (direction) => {
     slideIndex = direction === 'down' ? slideIndex + 1 : slideIndex - 1;
     sliderWrapper.style.transition = 'transform 0.5s ease-in-out';
@@ -51,24 +47,20 @@ const moveSlider = (direction) => {
     }, 500);
 };
 
-// Автоматическая прокрутка
 const startAutoSlider = () => {
     autoSlideInterval = setInterval(() => moveSlider('down'), 3000);
 };
 
-// Прокрутка колесиком
 sliderWrapper.addEventListener('wheel', (e) => {
     clearInterval(autoSlideInterval);
     moveSlider(e.deltaY > 0 ? 'down' : 'up');
     startAutoSlider();
 });
 
-// Запуск
 createSlides();
 startAutoSlider();
 
 
-// Первый слайдер
 const sliderWrapper1 = document.querySelector('.slider-wrapper-1');
 const slides1 = [
     { src: '/images/girls/1.png', alt: 'Image 1' },
@@ -81,7 +73,6 @@ const slideWidth1 = 280;
 let slideIndex1 = slides1.length;
 let autoSlideInterval1;
 
-// Функция создания слайдов для первого слайдера
 const createSlides1 = () => {
     const duplicatedSlides1 = [...slides1, ...slides1, ...slides1,  ...slides1,  ...slides1];
 
@@ -100,7 +91,6 @@ const createSlides1 = () => {
     sliderWrapper1.style.transform = `translateX(-${slideIndex1 * slideWidth1}px)`;
 };
 
-// Функция перемещения для первого слайдера
 const moveSlider1 = (direction) => {
     slideIndex1 = direction === 'down' ? slideIndex1 + 1 : slideIndex1 - 1;
     sliderWrapper1.style.transition = 'transform 0.5s ease-in-out';
@@ -119,19 +109,16 @@ const moveSlider1 = (direction) => {
     }, 500);
 };
 
-// Автоматическая прокрутка для первого слайдера
 const startAutoSlider1 = () => {
     autoSlideInterval1 = setInterval(() => moveSlider1('down'), 3000);
 };
 
-// Прокрутка колесиком для первого слайдера
 sliderWrapper1.addEventListener('wheel', (e) => {
     clearInterval(autoSlideInterval1);
     moveSlider1(e.deltaY > 0 ? 'down' : 'up');
     startAutoSlider1();
 });
 
-// Запуск первого слайдера
 createSlides1();
 startAutoSlider1();
 
@@ -162,31 +149,25 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   
 
-
-
-
-
-
-  // Второй слайдер для "join-slider"
-const sliderWrapper2 = document.querySelector('.join-slider'); // Для второго слайдера
+const sliderWrapper2 = document.querySelector('.join-slider'); 
 const slides2 = [
     { src: '/images/sky.png', alt: 'Chat with attractive streamers for free', title: 'Chat with attractive streamers for free', text: "It’s an excellent web platform for streaming. Write messages to the beautiful streamers for free and explore this magical universe of communication!" },
     { src: '/images/zamok.png', alt: 'Only verified users', title: 'Only verified users', text: 'We care about the privacy and security of our customers. All accounts are verified so look for an attractive stranger confidently!' },
     { src: '/images/search.svg', alt: 'Customized search', title: 'Customized search', text: 'Match alluring partners for your own preferences. Maybe you will be interested in a hot slender European or shy beautiful Asian? Make your choice…' },
     { src: '/images/ok.png', alt: 'Easy to use', title: 'Easy to use', text: 'Forget about hundreds of annoying notifications and inconvenient use. We have created the platform as easy to use and search as possible. Don’t waste your time studying functionality. Just enjoy!' }
 ];
-const slideWidth2 = 100; // Слайдер будет занимать всю ширину контейнера
-let slideIndex2 = 0; // Начальный индекс слайда
+const slideWidth2 = 100;
+let slideIndex2 = 0; 
 let autoSlideInterval2;
 
-// Функция создания слайдов для второго слайдера
+
 const createSlides2 = () => {
     slides2.forEach(slide => {
         const slideElement = document.createElement('div');
-        slideElement.classList.add('slide'); // Используем класс .slide для каждого слайда
+        slideElement.classList.add('slide'); 
 
         const contentElement = document.createElement('div');
-        contentElement.classList.add('left-block-join'); // Для левой части слайда
+        contentElement.classList.add('left-block-join'); 
 
         const titleElement = document.createElement('div');
         titleElement.classList.add('title-join');
@@ -212,24 +193,19 @@ const createSlides2 = () => {
         sliderWrapper2.appendChild(slideElement);
     });
 
-    // Позиционирование слайдов
     sliderWrapper2.style.transform = `translateX(-${slideIndex2 * slideWidth2}%)`;
 };
 
-// Запуск второго слайдера (например, с автопрокруткой)
 const startSlider2 = () => {
     autoSlideInterval2 = setInterval(() => {
-        slideIndex2 = (slideIndex2 + 1) % slides2.length; // Инкрементируем индекс слайдов
+        slideIndex2 = (slideIndex2 + 1) % slides2.length; 
         sliderWrapper2.style.transform = `translateX(-${slideIndex2 * 100}%)`;
-    }, 3000); // Каждые 3 секунды меняем слайд
+    }, 3000);
 };
 
-// Останавливаем второй слайдер, если нужно
 const stopSlider2 = () => {
     clearInterval(autoSlideInterval2);
 };
-
-// Инициализация второго слайдера
 createSlides2();
 startSlider2();
 

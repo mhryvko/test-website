@@ -6,11 +6,11 @@
 }
 
 @font-face {
-    font-family: "cerapro";
-    src: url(/font/cerapro.otf);
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: "cerapro";
+  src: url(/font/cerapro.otf);
+  font-weight: normal;
+  font-style: normal;
+}
 
 *,
 *::before,
@@ -24,15 +24,15 @@ body {
   background-color: #f6f7fa;
   font-family: "CustomFont", Arial, sans-serif;
 }
-html, body {
+html,
+body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   width: 100%;
 }
 
-
 .start-page {
-  padding: 0 280px; /* Убираем паддинг сверху, чтобы управлять отступами через margin */
+  padding: 0 280px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,7 +44,7 @@ html, body {
   max-width: 1352px;
 }
 .login {
-  margin-top: 50px; /* Отступ 50px сверху для кнопки "Log in" */
+  margin-top: 50px; 
   display: flex;
   justify-content: end;
 }
@@ -67,16 +67,16 @@ html, body {
 .content-page {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* Убедитесь, что элементы выровнены сверху */
+  align-items: flex-start; 
   flex-direction: row;
-  margin-top: 75px; /* Отступ 175px сверху для начала формы */
-  position: relative; /* Для позиционирования круга относительно этой секции */
+  margin-top: 75px; 
+  position: relative; 
   max-width: 1352px;
   width: 100%;
 }
 
 .left-column {
-  max-width: 50%; /* Ограничиваем ширину левой колонки */
+  max-width: 50%; 
 }
 
 .h1-text {
@@ -100,7 +100,7 @@ html, body {
   border-radius: 12px;
   text-align: center;
   z-index: 1;
-  position: relative; /* Чтобы форма была поверх круга */
+  position: relative; 
 }
 
 .button {
@@ -179,7 +179,7 @@ html, body {
 
 .input-wrapper input {
   width: 100%;
-  padding-right: 40px; /* Чтобы текст не залезал на иконку */
+  padding-right: 40px; 
 }
 
 .input-wrapper img {
@@ -226,7 +226,7 @@ html, body {
   color: #888;
 }
 
-/* Стиль круга */
+
 .circle {
   position: absolute;
   left: 64%;
@@ -344,13 +344,13 @@ html, body {
   left: 65%;
   top: -29%;
   z-index: 0;
-  overflow: hidden; /* Скрывает часть изображения, если оно выходит за границы */
+  overflow: hidden; 
 }
 
 .about-circle img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Картинка заполняет весь контейнер, но может быть обрезана */
+  object-fit: cover; 
 }
 
 .joinus-section {
@@ -388,7 +388,6 @@ html, body {
 }
 
 .left-block-join {
-
   width: 400px;
   height: 250px;
   background-color: #fff;
@@ -453,7 +452,7 @@ html, body {
 }
 
 .find {
-    position: relative;
+  position: relative;
   margin-top: 170px;
   display: flex;
   flex-direction: column;
@@ -470,93 +469,90 @@ html, body {
 }
 
 .find-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-  
-  .find-item {
-    display: flex;
-    align-items: center; /* Центрируем по вертикали */
-    justify-content: flex-start; /* Иконка слева, текст справа */
-    width: 800px;
-    height: 120px;
-    border-radius: 30px;
-    background-color: #fff;
-    box-shadow: 0px 10px 30px 0px #0000000d;
-    font-size: 24px;
-    font-family: "cerapro", Arial, sans-serif;
-    color: #000000;
-    gap: 20px;
-    padding: 40px 130px 40px 100px;
-    text-align: left;  /* Текст слева */
-    z-index: 1;
-  }
-  
-  .find-item img {
-    object-fit: contain;
-  }
-  
-  .find-item span {
-    line-height: 1.4;
-  }
-  
- .find-circle {
-    position: absolute;
-    left: 2%;
-    top: -2%;
-    z-index: 0;
- } 
-
- .find-circle img {
-width: 60%;
- } 
-
- 
- .slider-wrapper-1 {
-    display: flex;
-    width: max-content;
-    transition: transform 0.5s ease-in-out;
-    gap: 40px;
-    margin-bottom: 60px;
-  }
-  
-  .slider-item-1 {
-    width: 435px;
-    height: 410px;
-    flex-shrink: 0;
-  }
-  
-  .slider-item-1 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 40px;
-  }
-
-  .streamers {
-    margin-top: 175px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-.h2-stream {
-    max-width: 1131px;
-    font-size: 56px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 25px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
+.find-item {
+  display: flex;
+  align-items: center; 
+  justify-content: flex-start; 
+  width: 800px;
+  height: 120px;
+  border-radius: 30px;
+  background-color: #fff;
+  box-shadow: 0px 10px 30px 0px #0000000d;
+  font-size: 24px;
+  font-family: "cerapro", Arial, sans-serif;
+  color: #000000;
+  gap: 20px;
+  padding: 40px 130px 40px 100px;
+  text-align: left; 
+  z-index: 1;
+}
 
-.stream-text  {
-    font-size: 24px;
-    max-width: 558px;
-text-align: center;
+.find-item img {
+  object-fit: contain;
+}
+
+.find-item span {
+  line-height: 1.4;
+}
+
+.find-circle {
+  position: absolute;
+  left: 2%;
+  top: -2%;
+  z-index: 0;
+}
+
+.find-circle img {
+  width: 60%;
+}
+
+.slider-wrapper-1 {
+  display: flex;
+  width: max-content;
+  transition: transform 0.5s ease-in-out;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.slider-item-1 {
+  width: 435px;
+  height: 410px;
+  flex-shrink: 0;
+}
+
+.slider-item-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.streamers {
+  margin-top: 175px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.h2-stream {
+  max-width: 1131px;
+  font-size: 56px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.stream-text {
+  font-size: 24px;
+  max-width: 558px;
+  text-align: center;
 }
 
 .space-section {
@@ -566,10 +562,10 @@ text-align: center;
   max-width: 1596px;
   width: 100%;
   height: auto;
-  justify-content: flex-end; /* Прижимаем все вправо */
+  justify-content: flex-end; 
   position: relative;
   overflow: hidden;
-  margin-left: auto; /* Прижим к правому краю */
+  margin-left: auto; 
 }
 
 .space-blocks {
@@ -581,8 +577,8 @@ text-align: center;
 .left-space {
   display: flex;
   flex-direction: column;
-  max-width: 600px; /* Чтобы текст не растягивался */
-  margin-right: 50px; /* Отступ от телефона */
+  max-width: 600px; 
+  margin-right: 50px; 
   z-index: 2;
 }
 
@@ -592,17 +588,16 @@ text-align: center;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  width: 900px; /* Увеличиваем ширину */
+  width: 900px; 
 }
 
 .right-space img {
   position: relative;
-  width: 900px; /* Увеличенный размер */
+  width: 900px; 
   height: auto;
   object-fit: contain;
   z-index: 1;
 }
-
 
 .space-circle {
   position: absolute;
@@ -630,10 +625,10 @@ text-align: center;
 
 .chat-bubble {
   position: absolute;
-  bottom: 280px; /* Регулируй положение по необходимости */
+  bottom: 280px; 
   left: 50%;
   transform: translateX(-50%);
-  background: #4A6CF7;
+  background: #4a6cf7;
   color: white;
   padding: 17px 17px;
   font-size: 16px;
@@ -651,7 +646,7 @@ text-align: center;
 
 .footer {
   box-sizing: border-box;
-  background-color: #fff; /* Светлый фон */
+  background-color: #fff; 
   padding: 40px 0;
   height: 335px;
   display: flex;
@@ -661,7 +656,7 @@ text-align: center;
 .footer-container {
   max-width: 1470px;
   width: 100%;
-margin-top: 105px;
+  margin-top: 105px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -681,7 +676,8 @@ margin-top: 105px;
   margin-bottom: 10px;
 }
 
-.footer-column a, .footer-column p {
+.footer-column a,
+.footer-column p {
   text-decoration: none;
   color: #303030;
   font-size: 22px;
@@ -695,7 +691,7 @@ margin-top: 105px;
 }
 
 .mobile-girl-block {
-display: none !important;
+  display: none !important;
 }
 
 .mobile-girl {
@@ -820,7 +816,7 @@ display: none !important;
     background: white;
     padding: 36px;
     border-radius: 10px;
-    box-shadow: 0px 5.8px 23.19px 0px #0000001A;
+    box-shadow: 0px 5.8px 23.19px 0px #0000001a;
     color: #303030;
     width: 100%;
     max-width: 500px;
@@ -835,7 +831,8 @@ display: none !important;
     display: block;
     margin-bottom: 5px;
   }
-  input, button {
+  input,
+  button {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -843,7 +840,7 @@ display: none !important;
   .input-group input {
     width: 100%;
     padding: 10px;
-    box-shadow: 0px 5.8px 23.19px 0px #0000001A;
+    box-shadow: 0px 5.8px 23.19px 0px #0000001a;
     border-radius: 6px;
     font-size: 18px;
     color: #8789a1;
@@ -860,7 +857,7 @@ display: none !important;
     border: none;
     background-color: #eee;
     cursor: pointer;
-    color: #8789A1;
+    color: #8789a1;
     font-size: 12px;
   }
   .gender-buttons button.active {
@@ -914,7 +911,13 @@ display: none !important;
     border-radius: 60px;
     z-index: 1;
   }
-    .p-text-about { padding: 0 16px; width: 250px; margin-top: 50px; font-size: 16px; color: #303030; }
+  .p-text-about {
+    padding: 0 16px;
+    width: 250px;
+    margin-top: 50px;
+    font-size: 16px;
+    color: #303030;
+  }
   .join-slider-wrapper {
     overflow: hidden;
     position: relative;
@@ -925,7 +928,6 @@ display: none !important;
     position: relative;
     height: 300px;
     margin-top: 50px;
-
   }
   .slide {
     width: 100%;
@@ -943,19 +945,18 @@ display: none !important;
     display: none;
   }
 
-
   .mobile-girl-block {
     margin: 0 auto;
     display: block;
-
   }
   .mobile-girl {
-   min-width: 280px;
-   width: 100%;
+    min-width: 280px;
+    width: 100%;
     height: 305px;
     border-radius: 30px;
     object-fit: cover;
-    z-index: 0;display: block;
+    z-index: 0;
+    display: block;
   }
 
   .join-circle {
@@ -971,16 +972,15 @@ display: none !important;
     height: 168px;
     font-size: 16px;
     padding: 0 20px;
-
   }
-  
+
   .h2-find {
     font-size: 26px;
   }
 
   .mobile-span {
     width: 100%;
-  text-align: center;
+    text-align: center;
   }
 
   .h2-stream {
@@ -988,37 +988,37 @@ display: none !important;
     text-align: left;
   }
 
- .stream-text {
-  font-size: 16px;
-  text-align: left;
- }
+  .stream-text {
+    font-size: 16px;
+    text-align: left;
+  }
 
- .slider-wrapper-1 {
-  gap: 0;
- }
- .slider-item-1 {
-  width: 280px;
- }
+  .slider-wrapper-1 {
+    gap: 0;
+  }
+  .slider-item-1 {
+    width: 280px;
+  }
 
- .slider-wrapper {
-  gap: 0;
- }
+  .slider-wrapper {
+    gap: 0;
+  }
 
- .footer {
-  flex-direction: column;
-  padding: 35px 52px;
-  height: 100%;
- }
+  .footer {
+    flex-direction: column;
+    padding: 35px 52px;
+    height: 100%;
+  }
 
- .footer-container {
-  flex-direction: column;
-  margin-top: 0;
- }
- .footer-column {
-  gap: 30px;
- }
+  .footer-container {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .footer-column {
+    gap: 30px;
+  }
 
- .left-block-join {
-  width: 280px;
- }
+  .left-block-join {
+    width: 280px;
+  }
 }
