@@ -737,7 +737,7 @@ body {
 }
 
 .activeForm {
-  display: block;  /* Show the form with the 'active' class */
+  display: block; 
 }
 
 .gender-buttons {
@@ -754,18 +754,17 @@ body {
 height: 60px;
 }
 
-/* Скругляем только внешние углы первой кнопки */
 .gender-buttons button:first-child {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  border-right: none; /* Убираем границу между кнопками */
+  border-right: none; 
 }
 
-/* Скругляем только внешние углы последней кнопки */
+
 .gender-buttons button:last-child {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  border-left: none; /* Убираем границу между кнопками */
+  border-left: none;
 }
 
 
