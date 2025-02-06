@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="/css/index.css"/>
   <script src="/js/slider.js" defer></script>
+  <script src="/js/validation.js" defer></script>
   <title>Test Task</title>
 </head>
 <body>
@@ -45,6 +46,7 @@
     </div>
 
     <div class="form-container">
+      <!-- Первая форма -->
       <div class="user-info active-form" id="form-1">
         <div class="input-group">
           <label>I am</label>
@@ -55,34 +57,35 @@
         </div>
         <div class="input-group">
           <label>My Name</label>
-          <input type="text" placeholder="e.g. Alex">
+          <input type="text" id="name" placeholder="e.g. Alex">
         </div>
         <div class="input-group">
           <label>I was born</label>
-          <input type="date">
+          <input type="date" id="birth-date">
         </div>
         <div class="checkbox">
-          <input type="checkbox">
-          <span>I have read understand and agree to Terms of Use, Privacy Policy, Disclosures&Disclaimers.</span>
+          <input type="checkbox" id="terms-checkbox">
+          <span>I have read, understand, and agree to Terms of Use, Privacy Policy, Disclosures & Disclaimers.</span>
         </div>
         <button class="submit-btn">Sign Up Now</button>
       </div>
-
-      <div class="auth-info" id="form-2" class="">
+    
+      <!-- Вторая форма -->
+      <div class="auth-info" id="form-2">
         <button class="button google">
           <div class="icon-button">
             <img src="/images/logo-google.png" alt="Google logo" class="icon-button-img">
           </div>
           Sign up with Google
         </button>
-
+    
         <div class="divider">or</div>
-
+    
         <div class="input-group">
           <label for="email">Email</label>
           <input type="email" id="email" placeholder="e.g. Alex@email.com">
         </div>
-
+    
         <div class="input-group">
           <label for="password">Password</label>
           <div class="input-wrapper">
@@ -90,26 +93,27 @@
             <img src="/images/eye.png" alt="Show password" id="toggle-password">
           </div>
         </div>
-
+    
         <button class="button email">
           <div class="icon-button">
             <img src="/images/email.svg" alt="Mail logo" class="icon-button-img">
           </div>
           Sign up with Email
         </button>
-
+    
         <p class="terms">
           You hereby confirm that you are fully able and competent to access Livebeam and comply with the Terms of Use &
           Service, and are at least eighteen (18) years of age or the age of majority under the law of the jurisdiction of
           your residence and the one you are accessing Livebeam from.
         </p>
       </div>
-
+    
       <div class="microbuttons">
         <div class="microbutton" id="microbutton1"></div>
         <div class="microbutton opacity" id="microbutton2"></div>
       </div>
     </div>
+    
 
     <div class="circle">
       <img src="/images/Rectangle 12.png" alt="">

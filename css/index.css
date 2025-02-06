@@ -595,10 +595,10 @@ body {
   max-width: 1596px;
   width: 100%;
   height: auto;
-  justify-content: flex-end;
+  justify-content: center;
   position: relative;
   overflow: hidden;
-  margin-left: auto;
+margin: 0 auto;
 }
 
 .space-blocks {
@@ -635,7 +635,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-40%, -50%);
+  transform: translate(-50%, -50%);
   z-index: 0;
   width: 1000px;
   height: auto;
@@ -1311,14 +1311,39 @@ width: 280px;
 }
 
 .activeForm {
-  display: block !important; /* Показываем активную форму */
+  display: block !important;
 }
 
 .disactiveForm {
-  display: none !important; /* Полностью скрываем неактивную форму */
+  display: none !important;
 }
 
 .gender-buttons button.selected {
   background: linear-gradient(90deg, #7b61ff, #4facfe);
   color: white;
+}
+
+.error-message {
+position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255, 0, 0, 0.8);
+  color: white;
+  padding: 20px 30px;
+  border-radius: 5px;
+  font-size: 14px;
+  z-index: 1000;
+}
+
+
+.success-message {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 128, 0, 0.8);
+  color: white;
+  padding: 20px 30px;
+  border-radius: 5px;
+  font-size: 14px;
+  z-index: 1000;
 }
