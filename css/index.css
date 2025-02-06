@@ -1336,7 +1336,7 @@ position: fixed;
 
 
 .success-message {
-  position: absolute;
+  position:fixed ;
   top: 10px;
   right: 10px;
   background-color: rgba(0, 128, 0, 0.8);
@@ -1345,4 +1345,16 @@ position: fixed;
   border-radius: 5px;
   font-size: 14px;
   z-index: 1000;
+}
+
+@media (max-width: 1024px) {
+  .error-message,
+  .success-message {
+    top: 20px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 90%; 
+    max-width: 400px; 
+    text-align: center;
+  }
 }
