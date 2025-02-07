@@ -80,6 +80,8 @@ body {
 }
 
 .h1-text {
+  width: 90%;
+
   margin-top: 150px;
   font-size: 56px;
   font-weight: 700;
@@ -89,6 +91,7 @@ body {
 
 .p-text {
   max-width: 421px;
+  width: 90%;
   font-size: 24px;
 }
 
